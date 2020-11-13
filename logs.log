@@ -1,0 +1,610 @@
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Building the request !!
+
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Providing access to retrieve the records ang getting response !!
+
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Authorization: Bearer b35c5b2a12e7cb38d9913ecdd8734006969f2[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "x-apikey: b35c5b2a12e7cb38d9913ecdd8734006969f2[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 5facee902ec98b0016047956.mockapi.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Authorization: Bearer b35c5b2a12e7cb38d9913ecdd8734006969f2
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> x-apikey: b35c5b2a12e7cb38d9913ecdd8734006969f2
+[main] DEBUG org.apache.http.headers  - >> Host: 5facee902ec98b0016047956.mockapi.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 207[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Etag: "-401774731"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 13 Nov 2020 09:32:35 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Server: Cowboy
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << X-Powered-By: Express
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Content-Length: 207
+[main] DEBUG org.apache.http.headers  - << Etag: "-401774731"
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 13 Nov 2020 09:32:35 GMT
+[main] DEBUG org.apache.http.headers  - << Via: 1.1 vegur
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "[{"id":"1","createdAt":1605168897,"name":"Alfin","mail":"alfin.antonyraj@atmecs.com","designation":"STE"},{"id":"2","createdAt":1605168837,"name":"Shane","mail":"shanealfin720@gmail.com","designation":"SE"}]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2123064f
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting response body
+
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Response body: [{"id":"1","createdAt":1605168897,"name":"Alfin","mail":"alfin.antonyraj@atmecs.com","designation":"STE"},{"id":"2","createdAt":1605168837,"name":"Shane","mail":"shanealfin720@gmail.com","designation":"SE"}]
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting status code
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verifying the status code !!
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Status Code:200
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verified status code !!
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Building the request !!
+
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Providing access to retrieve the records ang getting response !!
+
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 5facee902ec98b0016047956.mockapi.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: 5facee902ec98b0016047956.mockapi.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 207[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Etag: "-401774731"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 13 Nov 2020 09:35:15 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Server: Cowboy
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << X-Powered-By: Express
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Content-Length: 207
+[main] DEBUG org.apache.http.headers  - << Etag: "-401774731"
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 13 Nov 2020 09:35:15 GMT
+[main] DEBUG org.apache.http.headers  - << Via: 1.1 vegur
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "[{"id":"1","createdAt":1605168897,"name":"Alfin","mail":"alfin.antonyraj@atmecs.com","designation":"STE"},{"id":"2","createdAt":1605168837,"name":"Shane","mail":"shanealfin720@gmail.com","designation":"SE"}]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@29f85fe1
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting response body
+
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Response body: [{"id":"1","createdAt":1605168897,"name":"Alfin","mail":"alfin.antonyraj@atmecs.com","designation":"STE"},{"id":"2","createdAt":1605168837,"name":"Shane","mail":"shanealfin720@gmail.com","designation":"SE"}]
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting status code
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verifying the status code !!
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Status Code:200
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verified status code !!
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Providing access and inserting records to the db !!
+
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://sample-3a82.restdb.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to sample-3a82.restdb.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /rest/restapi-testing HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /rest/restapi-testing HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 97[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: sample-3a82.restdb.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /rest/restapi-testing HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: text/plain; charset=ISO-8859-1
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 97
+[main] DEBUG org.apache.http.headers  - >> Host: sample-3a82.restdb.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"firstname":"Kedhar","mail":"kjadhav@gmail.com","designation":"All Rounder","lastname":"Jadhav"}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 401 Unauthorized[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-xss-protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-download-options: noopen[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-content-type-options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-dns-prefetch-control: off[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "vary: X-HTTP-Method-Override[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "date: Fri, 13 Nov 2020 09:40:01 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "connection: close[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "transfer-encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 401 Unauthorized
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 401 Unauthorized
+[main] DEBUG org.apache.http.headers  - << x-xss-protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << x-download-options: noopen
+[main] DEBUG org.apache.http.headers  - << x-frame-options: SAMEORIGIN
+[main] DEBUG org.apache.http.headers  - << x-content-type-options: nosniff
+[main] DEBUG org.apache.http.headers  - << x-dns-prefetch-control: off
+[main] DEBUG org.apache.http.headers  - << vary: X-HTTP-Method-Override
+[main] DEBUG org.apache.http.headers  - << date: Fri, 13 Nov 2020 09:40:01 GMT
+[main] DEBUG org.apache.http.headers  - << connection: close
+[main] DEBUG org.apache.http.headers  - << transfer-encoding: chunked
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Authentication required
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - sample-3a82.restdb.io:443 requested authentication
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Response contains no authentication challenges
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/octet-stream
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "13[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "No access. Code 001"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@17690e14
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51393<->188.166.28.84:443 shut down
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting status code: 401
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verifying status code !!
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Providing access and inserting records to the db !!
+
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://sample-3a82.restdb.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to sample-3a82.restdb.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /rest/restapi-testing HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /rest/restapi-testing HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 72[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: sample-3a82.restdb.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /rest/restapi-testing HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: text/plain; charset=ISO-8859-1
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 72
+[main] DEBUG org.apache.http.headers  - >> Host: sample-3a82.restdb.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"mail":"kjadhav@gmail.com","name":"Kedhar","designation":"All Rounder"}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 401 Unauthorized[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-xss-protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-download-options: noopen[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-content-type-options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-dns-prefetch-control: off[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "vary: X-HTTP-Method-Override[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "date: Fri, 13 Nov 2020 09:41:36 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "connection: close[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "transfer-encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 401 Unauthorized
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 401 Unauthorized
+[main] DEBUG org.apache.http.headers  - << x-xss-protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << x-download-options: noopen
+[main] DEBUG org.apache.http.headers  - << x-frame-options: SAMEORIGIN
+[main] DEBUG org.apache.http.headers  - << x-content-type-options: nosniff
+[main] DEBUG org.apache.http.headers  - << x-dns-prefetch-control: off
+[main] DEBUG org.apache.http.headers  - << vary: X-HTTP-Method-Override
+[main] DEBUG org.apache.http.headers  - << date: Fri, 13 Nov 2020 09:41:36 GMT
+[main] DEBUG org.apache.http.headers  - << connection: close
+[main] DEBUG org.apache.http.headers  - << transfer-encoding: chunked
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Authentication required
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - sample-3a82.restdb.io:443 requested authentication
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Response contains no authentication challenges
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/octet-stream
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "13[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "No access. Code 001"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@17690e14
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51406<->188.166.28.84:443 shut down
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting status code: 401
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verifying status code !!
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Building the request !!
+
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Providing access to retrieve the records ang getting response !!
+
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 5facee902ec98b0016047956.mockapi.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: 5facee902ec98b0016047956.mockapi.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 207[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Etag: "-401774731"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 13 Nov 2020 09:45:09 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Server: Cowboy
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << X-Powered-By: Express
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Content-Length: 207
+[main] DEBUG org.apache.http.headers  - << Etag: "-401774731"
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 13 Nov 2020 09:45:09 GMT
+[main] DEBUG org.apache.http.headers  - << Via: 1.1 vegur
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "[{"id":"1","createdAt":1605168897,"name":"Alfin","mail":"alfin.antonyraj@atmecs.com","designation":"STE"},{"id":"2","createdAt":1605168837,"name":"Shane","mail":"shanealfin720@gmail.com","designation":"SE"}]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@29f85fe1
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting response body
+
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Response body: [{"id":"1","createdAt":1605168897,"name":"Alfin","mail":"alfin.antonyraj@atmecs.com","designation":"STE"},{"id":"2","createdAt":1605168837,"name":"Shane","mail":"shanealfin720@gmail.com","designation":"SE"}]
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting status code
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verifying the status code !!
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Status Code:200
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verified status code !!
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 72[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 5facee902ec98b0016047956.mockapi.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: text/plain; charset=ISO-8859-1
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 72
+[main] DEBUG org.apache.http.headers  - >> Host: 5facee902ec98b0016047956.mockapi.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"mail":"kjadhav@gmail.com","name":"Kedhar","designation":"All Rounder"}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 95[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 13 Nov 2020 09:46:37 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << Server: Cowboy
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << X-Powered-By: Express
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Content-Length: 95
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 13 Nov 2020 09:46:37 GMT
+[main] DEBUG org.apache.http.headers  - << Via: 1.1 vegur
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "{"id":"3","createdAt":1605260618,"name":"name 3","mail":"mail 3","designation":"designation 3"}"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1e86a5a7
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Id:3
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - CreatedAt:1605260618
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: PUT /users/3 HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "PUT /users/3 HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 74[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 5facee902ec98b0016047956.mockapi.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> PUT /users/3 HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 74
+[main] DEBUG org.apache.http.headers  - >> Host: 5facee902ec98b0016047956.mockapi.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"mail":"kjadhav@gmail.com","name":"Kedhar J","designation":"All Rounder"}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 106[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 13 Nov 2020 09:51:47 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Server: Cowboy
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << X-Powered-By: Express
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Content-Length: 106
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 13 Nov 2020 09:51:47 GMT
+[main] DEBUG org.apache.http.headers  - << Via: 1.1 vegur
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "{"id":"3","createdAt":1605260618,"name":"Kedhar J","mail":"kjadhav@gmail.com","designation":"All Rounder"}"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3bddc676
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Status Code:200
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Response Body:{"id":"3","createdAt":1605260618,"name":"Kedhar J","mail":"kjadhav@gmail.com","designation":"All Rounder"}
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verifying status code
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: DELETE /users/3 HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "DELETE /users/3 HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 5facee902ec98b0016047956.mockapi.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> DELETE /users/3 HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: 5facee902ec98b0016047956.mockapi.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 106[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 13 Nov 2020 09:53:48 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Server: Cowboy
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << X-Powered-By: Express
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Content-Length: 106
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 13 Nov 2020 09:53:48 GMT
+[main] DEBUG org.apache.http.headers  - << Via: 1.1 vegur
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting status code: 200
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verifying status code !!
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: DELETE /users/3 HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "DELETE /users/3 HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 5facee902ec98b0016047956.mockapi.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> DELETE /users/3 HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: 5facee902ec98b0016047956.mockapi.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 404 Not Found[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 11[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 13 Nov 2020 09:54:12 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 404 Not Found
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 404 Not Found
+[main] DEBUG org.apache.http.headers  - << Server: Cowboy
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << X-Powered-By: Express
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Content-Length: 11
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 13 Nov 2020 09:54:12 GMT
+[main] DEBUG org.apache.http.headers  - << Via: 1.1 vegur
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting status code: 404
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verifying status code !!
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 5facee902ec98b0016047956.mockapi.io:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: DELETE /users/2 HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "DELETE /users/2 HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 5facee902ec98b0016047956.mockapi.io[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> DELETE /users/2 HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: 5facee902ec98b0016047956.mockapi.io
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/14.0.1)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: Cowboy[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 100[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 13 Nov 2020 09:54:41 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Server: Cowboy
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << X-Powered-By: Express
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Content-Length: 100
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 13 Nov 2020 09:54:41 GMT
+[main] DEBUG org.apache.http.headers  - << Via: 1.1 vegur
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Getting status code: 200
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verifying status code !!
+[main] INFO  com.atmecs.mock_api_testing.utilities.Logging  - Verified status code !!
+
